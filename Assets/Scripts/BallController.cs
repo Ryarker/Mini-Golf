@@ -67,9 +67,11 @@ public class BallController : MonoBehaviour, IPointerDownHandler
                 shootingMode = false;
                 aimLine.gameObject.SetActive(false);
                 aimWorld.gameObject.SetActive(false);
+                AudioManager.instance.GolfSFX();
             }
         }
     }
+    
 
     private void FixedUpdate() {
         if(shoot){
